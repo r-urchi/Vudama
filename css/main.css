@@ -103,10 +103,17 @@ h2 {
 .header__icono {
   position: absolute;
   z-index: 99;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  border-radius: 10px;
   bottom: 3%;
   left: 45%;
   font-size: 60px;
   animation: bajar-subir 1s ease infinite;
+  transition: 0.3s ease all;
+}
+.header__icono:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .header__enlace-icono {
@@ -493,11 +500,13 @@ h2 {
   .nav a {
     font-size: 10px;
     margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .nav__lista a,
