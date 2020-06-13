@@ -1,0 +1,41 @@
+.nav 
+    position: fixed
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 70
+    width: 100%
+    margin: 0
+    padding: 10px 20px
+
+.nav__lista,
+.nav__enlace
+    display: inline-block
+    margin: 10px
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: bold
+    color: #c2c2c2
+    transition: .5s ease
+
+.nav__logo-img
+    width: 45px
+    height: 45px
+    margin: 0
+    padding: 0
+    border: #fff 1px solid
+    border-radius: 50%
+
+.nav__lista.active
+    border-bottom: 2px solid orange
+
+.nav__enlace
+    transition: .5s ease
+    margin: 0
+    padding: 0
+
+.nav__lista.active a,
+.nav__lista:hover a
+    color: orange
+

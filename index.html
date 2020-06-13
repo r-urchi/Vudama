@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vudama</title>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#000" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="apple-touch-icon" href="icons/icon-144x144.png" sizes="144x144">
+	<link rel="apple-touch-icon" href="icons/icon-512x512.png" sizes="512x512">
+</head>
+<body>
+
+	<nav class="nav">
+		<a href="#inicio" class="nav__logo"><img src="media/vudamalogo.png" alt="" class="nav__logo-img"></a>
+		<ul id="menu" class="menu">
+			<li data-menuanchor="inicio" class="nav__lista active" class="nav__lista">
+				<a href="#inicio" class="nav__enlace">Inicio</a>
+			</li>
+
+			<li data-menuanchor="news" class="nav__lista">
+				<a href="#news" class="nav__enlace">Novedades</a>
+			</li>
+
+			<li data-menuanchor="stereotipos" class="nav__lista">
+				<a href="#stereotipos" class="nav__enlace">Stereotipos</a>
+			</li>
+
+			<li data-menuanchor="fechas" class="nav__lista">
+				<a href="#fechas" class="nav__enlace">Fechas</a>
+			</li>
+
+			<li data-menuanchor="redes" class="nav__lista">
+				<a href="#redes" class="nav__enlace">Redes</a>
+			</li>
+			
+		</ul>
+	</nav>
+
+	<main id="fullpage">
+		<header class="section header">
+			<div class="header__titulo"></div>
+			<div class="header__icono">
+				<p><a href="#news" class="header__enlace-icono"><i class="fas fa-chevron-down"></i></a></p>
+			</div>	
+		</header>
+
+		<section class="section news">
+			<article class="news__video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/AoKhUdpfKD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</article>
+		</section>
+
+		<section class="section stereotipos">
+			<article class="slide">
+				<section class="stereotipos__disco">
+
+					<div class="stereotipos__tapa">
+					  <section class="flip-card">
+						<div class="flip-card-inner">
+						  <div class="flip-card-front">
+							<img src="media/tapa.jpg" alt="">
+						  </div>
+						  <div class="flip-card-back">
+							<img src="media/back.jpg" alt="" >
+						  </div>
+						</div>
+					  </section>
+					</div>
+				  
+					<div class="stereotipos__spotify">
+						<iframe src="https://open.spotify.com/embed/album/5PATpTRnHm9tsx9oww5ERC" width="350" height="350" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+					</div>
+				  
+				  </section>
+			</article>
+
+			<article class="slide">
+				<div class="stereotipos__info">
+					<div class="stereotipos__creditos">
+						<p>Charlie Price: Voz y guitarra. <br>
+							Diego Díaz: Guitarra líder y coros. <br>
+							Ramón Urchipía: Bajo. <br>
+							Miguel Suárez: Batería y coros. <br>
+							Secuencias: Vudama. <br>
+							<br>
+							Producido por: Vudama. <br>
+							Asist. producción técnica: Pablo Soler, Federico Hencker, Pablo Torterolo. <br>
+							Grabado en: Studiorec, Estudio Primero 3 y La Sonoteca (Buenos Aires, Argentina). <br>
+							Técnicos de grabación: Charlie Price, Diego Díaz, Miguel Suarez, Pablo Torterolo. <br>
+							Drum doctor: Pablo Torterolo. <br>
+							Mezcla y mastering: Toto Strapporava. <br>
+							Fotografía: Agostina Gundin. <br>
+							Modelos de fotografía: Carolina Drama y Juan Manuel Suarez. <br>
+							Asesoría integral de imagen: Revolt - Carolina Drama. <br>
+							Management: Bárbara Lavera - Crowd it producciones. <br>
+							Diseño de logo: Daniel Reyes. <br>
+							Diseño gráfico para “Stereotipos”: Agustín Pizarro Maire. <br>
+							
+							Letras: Price. <br>
+							Música: Price - Díaz - Suarez - Urchipía. <br>
+							
+							Todos los derechos reservados - Vudama.</p>
+					</div>
+				</div>
+			</article>
+
+		</section>
+
+		<section class="section fechas">
+			<article class="fechas__contenedor">
+				<a href="https://www.songkick.com/artists/9218164" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-font-color="#f2f2f2" data-background-color="transparent" data-locale="en">Stereotour</a>
+			</article>
+		</section>
+		
+		<footer class="section footer">
+			<p class="footer__redes-sociales">
+				<a href="https://open.spotify.com/artist/32gfMgmbvgxUSNUCargCnc" class="spotify" target="_blank"><i class="fab fa-spotify"></i></a>
+				<a href="https://www.youtube.com/channel/UCYWuLhCBKVK3AOAaXv6VFGg" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+				<a href="https://www.instagram.com/vudama/" class="instagram" target="_blank"><i class="fab fa-instagram-square"></i></a>
+				<a href="https://www.facebook.com/vudama/" class="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/vudama/" class="twitter" target="_blank"><i class="fab fa-twitter-square"></i></a>
+			</p>
+		</footer>
+	</main>
+
+	<script>navigator.serviceWorker.register('sw.js')</script>
+	<script src="//widget.songkick.com/9218164/widget.js"></script>
+	<script src="js/fullpage.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
