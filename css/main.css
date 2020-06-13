@@ -459,6 +459,10 @@ h2 {
     font-size: 60px;
   }
 
+  .header__icono {
+    display: none;
+  }
+
   .nav li,
 .nav a {
     font-size: 10x;
