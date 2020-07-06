@@ -1,5 +1,6 @@
 const seccionesPagina = new fullpage('#fullpage', {
 
+	    licenseKey: null,
 		autoScrolling: true, 
 		fitToSection: false, 
 		fitToSectionDelay: 300, 
