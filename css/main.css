@@ -1,4 +1,5 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -41,8 +42,14 @@ h2 {
 
 .nav {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   z-index: 70;
   width: 100%;
@@ -59,6 +66,8 @@ h2 {
   font-size: 16px;
   font-weight: bold;
   color: #c2c2c2;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -76,6 +85,8 @@ h2 {
 }
 
 .nav__enlace {
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   margin: 0;
   padding: 0;
@@ -109,7 +120,10 @@ h2 {
   bottom: 3%;
   left: 45%;
   font-size: 60px;
+  -webkit-animation: bajar-subir 1s ease infinite;
   animation: bajar-subir 1s ease infinite;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
 .header__icono:hover {
@@ -128,8 +142,14 @@ h2 {
 }
 
 .news__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -161,8 +181,14 @@ h2 {
   height: 100%;
   margin: 0;
   padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -170,8 +196,14 @@ h2 {
   width: 350px;
   height: 350px;
   margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 10px;
 }
@@ -182,7 +214,10 @@ h2 {
   max-width: 350px;
   height: 350px;
   margin-left: 100px;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -191,11 +226,17 @@ h2 {
   width: 100%;
   height: 100%;
   text-align: center;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  -o-transition: transform 0.6s;
   transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -203,10 +244,12 @@ h2 {
   position: absolute;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -223,7 +266,11 @@ h2 {
 .stereotipos__info {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -232,7 +279,11 @@ h2 {
   max-width: 70%;
   height: 70%;
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: start;
   padding: 10px 10px;
@@ -259,20 +310,30 @@ h2 {
 }
 
 .footer__redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
   font-size: 50px;
 }
 
 .footer__redes-sociales a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100px;
   height: 100px;
   background: #fff;
   color: #30313A;
   text-decoration: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-radius: 100px;
   margin: 0 20px;
@@ -357,15 +418,25 @@ h2 {
   }
 
   .stereotipos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-flow: wrap;
     flex-flow: wrap;
   }
 
   .stereotipos__disco {
     width: 100%;
     max-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin: 0 auto;
     padding: 0;
@@ -390,7 +461,11 @@ h2 {
   }
 
   .stereotipos__spotify {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
     max-width: 300px;
@@ -400,7 +475,11 @@ h2 {
   }
 
   .stereotipos__spotify iframe {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 300px;
     height: 200px;
@@ -509,7 +588,10 @@ h2 {
   }
 
   .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
